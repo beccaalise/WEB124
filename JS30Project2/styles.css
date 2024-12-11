@@ -1,0 +1,56 @@
+/* Basic styling for the page and canvas */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0; /* Light background color */
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Control Panel Styling */
+#controls {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+#controls label {
+  display: block;
+  margin: 5px 0;
+}
+
+#controls input[type="range"] {
+  width: 100%;
+}
+
+#controls button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#controls button:hover {
+  background-color: #45a049;
+}
+
+/* Canvas Styling */
+canvas {
+  border: 2px solid #333;
+  cursor: crosshair;
+  background-color: #ffffff; /* Default background */
+}
