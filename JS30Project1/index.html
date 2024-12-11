@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Rebecca Cathey">
+    <!-- Source of Code: Originated from https://github.com/wesbos/JavaScript30/blob/master/08%20-%20Fun%20with%20HTML5%20Canvas/index-FINISHED.html I did reference this website https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Basic_usage  to learn more about canvases and elements that go with it-->
+    <!-- Description: Updated the page to have the ability to clear the drawing and have a control panel. -->
+    <link rel="stylesheet" href="styles.css">
+  <title>HTML5 Canvas Drawing</title>
+</head>
+<body>
+  <div id="controls">
+    <label for="lineWidth">Line Width:</label>
+    <input type="range" id="lineWidth" min="1" max="100" value="10">
+
+    <label for="colorPicker">Color:</label>
+    <input type="color" id="colorPicker" value="#BADA55">
+
+    <label for="backgroundColor">Canvas Background:</label>
+    <input type="color" id="backgroundColor" value="#ffffff">
+
+    <button id="clearBtn">Clear Canvas</button>
+    <button id="saveBtn">Save Drawing</button>
+  </div>
+  <canvas id="draw" role="application" aria-label="Interactive Drawing Canvas"></canvas>
+  
+  <script src="script.js"></script>
+</body>
+</html>
